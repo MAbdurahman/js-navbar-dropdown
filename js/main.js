@@ -32,4 +32,26 @@ $(function () {
         this.classList.toggle("active");
     });
 
+
+
+
+
+    const sections = document.querySelectorAll('section');
+    const listLinks = document.querySelectorAll('.navbar__list_link');
+
+    window.addEventListener('scroll', () => {
+        sections.forEach(section => {
+            let top = window.scrollY;
+            let offset = section.offsetTop - 200;
+            let height = section.offsetHeight;
+            let id = section.getAttribute('id');
+
+            if ((top >= offset) && (top < (offset + height))) {
+                listLinks.forEach(listLink => {
+                    listLink.classList.remove('active');
+                    document.querySelector('nav ul li a[href*=' + id + ']').classList.add('active');
+                });
+            }
+        });
+    });
 });
