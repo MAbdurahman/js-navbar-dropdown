@@ -16,7 +16,7 @@
     <title>js-navbar-dropdown</title>
 </head>
 
-<body>
+<body id="page-top">
 <!-- preloader -->
 <section id="preloader">
     <img src="./gifs/preloader.gif" alt="hourglass timer" id="preloader-gif"/>
@@ -31,59 +31,74 @@
             <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
             <ul class="nav-list">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#page-top">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Shop</a>
+                    <a href="#!">Shop</a>
                     <ul class="nav-dropdown">
                         <li>
-                            <a href="#">Abstract Originals</a>
+                            <a href="#abstract">Abstract Originals</a>
                         </li>
                         <li>
-                            <a href="#">Expressionism Art</a>
+                            <a href="#expressionism">Expressionism Art</a>
                         </li>
                         <li>
-                            <a href="#">Impressionism Art</a>
+                            <a href="#impressionism">Impressionism Art</a>
                         </li>
                         <li>
-                            <a href="#">Pop Art</a>
+                            <a href="#pop-art">Pop Art</a>
                         </li>
                         <li>
-                            <a href="#">Surrealism Art</a>
+                            <a href="#surrealism">Surrealism Art</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Prints</a>
+                    <a href="#!">Prints</a>
                     <ul class="nav-dropdown">
                         <li>
-                            <a href="#">Gallery Wall</a>
+                            <a href="#gallery-wall">Gallery Wall</a>
                         </li>
                         <li>
-                            <a href="#">Lithographs</a>
+                            <a href="#lithographs">Lithographs</a>
                         </li>
                         <li>
-                            <a href="#">Photographs</a>
+                            <a href="#photographs">Photographs</a>
                         </li>
                         <li>
-                            <a href="#">Gifts</a>
+                            <a href="#gifts">Gifts</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#blog">Blog</a>
                 </li>
                 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </div>
 </section>
+<main class="main__section">
+    <section id="home" class="section section-home"><h1>home</h1></section>
+    <section id="about" class="section section-about"><h2>Read About Me</h2></section>
+    <section id="abstract" class="section section-abstract"><h2>Abstract Originals</h2></section>
+    <section id="expressionism" class="section section-abstract"><h2>Expressionism</h2></section>
+    <section id="impressionism" class="section section-abstract"><h2>Impressionism</h2></section>
+    <section id="pop-art" class="section section-abstract"><h2>Pop Art</h2></section>
+    <section id="surrealism" class="section section-abstract"><h2>Surrealism</h2></section>
+    <section id="gallery-wall" class="section section-projects"><h2>Gallery Wall</h2></section>
+    <section id="lithographs" class="section section-projects"><h2>Lithographs</h2></section>
+    <section id="photographs" class="section section-projects"><h2>Photographs</h2></section>
+    <section id="gifts" class="section section-projects"><h2>Gifts</h2></section>
+    <section id="blog" class="section section-projects"><h2>My Blog</h2></section>
+    <section id="contact" class="section section-contact"><h2>Let's Collaborate</h2></section>
+</main>
 
 
 <script src="./js/jquery-3.6.4.min.js"></script>
